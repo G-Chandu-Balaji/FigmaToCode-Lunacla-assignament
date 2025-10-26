@@ -1,0 +1,36 @@
+/* li base */
+ul li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Hover fill using ::before */
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  /* background-color: #28292f; */
+  background: linear-gradient(to right, #28292f01 0%, #28292f 100%);
+  /* opacity: 0.5; */
+  z-index: 0;
+  transition: width 0.4s ease;
+  border-radius: 16px;
+}
+
+ul li:hover::before {
+  width: 100%;
+}
+
+/* Ensure text stays above */
+ul li span {
+  position: relative;
+  z-index: 10;
+}
+.active-indicator {
+  box-shadow: -8.43333px -16.8667px 50.6px -16.8667px #485b71,
+    13.4933px 16.8667px 67.4667px 8.43333px #0a0a0a;
+}
