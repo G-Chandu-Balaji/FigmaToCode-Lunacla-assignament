@@ -93,7 +93,7 @@ function ImageGallery() {
                 className="p-2"
                 style={{ flex: `0 0 ${100 / visibleCount}%` }}
               >
-                <div className="bg-[#1f1f1f] rounded-xl overflow-visible shadow-md h-40 flex items-center justify-center group transition-transform duration-500 ease-in-out hover:-rotate-2 hover:scale-108 hover:-translate-y-6">
+                <div className="bg-[#1f1f1f] rounded-xl overflow-visible shadow-md  h-40   flex items-center justify-center group transition-transform duration-500 ease-in-out hover:-rotate-2 hover:scale-108 hover:-translate-y-6">
                   <img
                     src={src}
                     alt={`image-${i}`}
